@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/context
+  http://www.springframework.org/schema/spring-context.xsd
+  http://www.springframework.org/schema/p">
+    <bean name="student1" class="org.example.Student">
+        <!--short form notation-->
+        <property name="studentId" value="22344" />
+        <property name="studentName" value="Hamza Aamir" />
+
+        <property name="studentAddress">
+            <value>punjab</value>
+        </property>
+    </bean>
+
+    <bean name="student2" class="org.example.Student">
+        <!--short form notation-->
+        <property name="studentId" value="22345" />
+        <property name="studentName" value="Abdullah Aamir" />
+
+        <property name="studentAddress">
+            <value>punjab</value>
+        </property>
+    </bean>
+
+    <!-- Collection bean insertion -->
+    <!-- List -->
+<!--    <bean>-->
+<!--        <property name="">-->
+<!--            <list>-->
+<!--                <value>10</value>-->
+<!--                <value>20</value>-->
+<!--                <value>30</value>-->
+<!--                <value>40</value>-->
+<!--                <null/>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--    </bean>-->
+
+    <!-- Set -->
+<!--    <bean>-->
+<!--        <property name="">-->
+<!--            <set>-->
+<!--                <value>10</value>-->
+<!--                <value>20</value>-->
+<!--            </set>-->
+<!--        </property>-->
+<!--    </bean>-->
+
+    <!-- Map -->
+<!--    <bean>-->
+<!--        <property name="">-->
+<!--            <map>-->
+<!--                <entry key="java" value="2months" />-->
+<!--                <entry key="python" value="1month" />-->
+<!--            </map>-->
+<!--        </property>-->
+<!--    </bean>-->
+</beans>

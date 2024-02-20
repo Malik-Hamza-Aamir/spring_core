@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config />
+
+    <bean name="address" class="org.autowiring_qualifier.Address">
+        <property name="street" value="213b tali mohri, rawalpindi" />
+        <property name="zipCode" value="46000" />
+    </bean>
+
+    <bean name="address2" class="org.autowiring_qualifier.Address">
+        <property name="street" value="address2, rawalpindi" />
+        <property name="zipCode" value="46000" />
+    </bean>
+
+    <bean name="emp" class="org.autowiring_qualifier.Employee" />
+
+</beans>

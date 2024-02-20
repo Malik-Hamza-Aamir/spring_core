@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/context
+  http://www.springframework.org/schema/spring-context.xsd
+  http://www.springframework.org/schema/p">
+
+    <bean name="emp1" class="org.springcore.collections.Emp">
+        <property name="name" value="Hamza" />
+        <property name="phones">
+            <list>
+                <value>03304089244</value>
+                <value>03304089245</value>
+                <value>03304089245</value>
+            </list>
+        </property>
+
+        <property name="addresses">
+            <set>
+                <value>address1</value>
+                <value>address2</value>
+                <value>address3</value>
+            </set>
+        </property>
+
+        <property name="courses">
+            <map>
+                <entry key="science" value="2months" />
+                <entry key="python" value="1month" />
+            </map>
+        </property>
+    </bean>
+
+    <!-- Collection bean insertion -->
+    <!-- List -->
+<!--    <bean>-->
+<!--        <property name="">-->
+<!--            <list>-->
+<!--                <value>10</value>-->
+<!--                <value>20</value>-->
+<!--                <value>30</value>-->
+<!--                <value>40</value>-->
+<!--                <null/>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--    </bean>-->
+
+    <!-- Set -->
+<!--    <bean>-->
+<!--        <property name="">-->
+<!--            <set>-->
+<!--                <value>10</value>-->
+<!--                <value>20</value>-->
+<!--            </set>-->
+<!--        </property>-->
+<!--    </bean>-->
+
+    <!-- Map -->
+<!--    <bean>-->
+<!--        <property name="">-->
+<!--            <map>-->
+<!--                <entry key="java" value="2months" />-->
+<!--                <entry key="python" value="1month" />-->
+<!--            </map>-->
+<!--        </property>-->
+<!--    </bean>-->
+</beans>

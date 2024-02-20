@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/context
+  http://www.springframework.org/schema/spring-context.xsd
+  http://www.springframework.org/schema/p">
+
+    <bean name="bref" class="org.springcore.referenceType.B">
+        <property name="bName" value="classBname" />
+    </bean>
+
+    <bean name="aref" class="org.springcore.referenceType.A">
+        <property name="aName" value="classAname" />
+        <property name="obj" ref="bref" />
+    </bean>
+</beans>
